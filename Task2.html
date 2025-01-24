@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Task2.css">
+  <title>Responsive Navigation Bar</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand-logo">MySite</div>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div id="home">
+    <h1>Welcome to My Site</h1>
+    <p>
+      Your one-stop destination for amazing services and insights. Browse through our sections to learn more
+    </p>
+  </div>
+  <img src="task21.jpeg" id="about">
+  <br>
+  <img src="task22.jpeg">
+  <form id="contact">
+    <label>Name</label>
+    <input type="text" placeholder="Enter Your name"><br>
+    <label>Email</label>
+    <input type="email" placeholder="Enter Your Email">
+  </form>
+  <footer class="foot">
+    developed by omprakash
+  </footer>
+</body>
+
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+</script>
+</html>
